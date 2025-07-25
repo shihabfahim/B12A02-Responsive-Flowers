@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* common css start */
+section{
+    margin-top: 100px;
+}
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.para-font{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.orange-font{
+    color: #E95A08;
+}
+
+/* common css end */
+ul{
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+    
+}
+ul li{
+    list-style: none;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #8987A1;
+}
+ul .home,.cart{
+    color: black;
+    font-weight: 500;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner h1{
+    font-size: 65px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.banner p{
+    font-size: 22px;
+    margin-bottom: 0;
+}
+.banner-left{
+    width: 570px;
+}
+.flower{
+    margin-top: 0;
+}
+.banner-container{
+    display: flex;
+    align-items: center;
+}
