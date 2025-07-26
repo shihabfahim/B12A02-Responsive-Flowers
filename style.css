@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 body{
     max-width: 1140px;
     margin: 0 auto;
@@ -9,6 +7,7 @@ body{
 /* common css start */
 section{
     margin-top: 100px;
+    
 }
 .noto-serif-font {
   font-family: "Noto Serif", serif;
@@ -35,6 +34,14 @@ section{
     color: #E95A08;
 }
 
+.btn-primary{
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+}
 /* common css end */
 ul{
     display: flex;
@@ -61,16 +68,21 @@ ul .home,.cart{
     justify-content: space-between;
 }
 .banner h1{
-    font-size: 65px;
+    font-size: 4rem;
     margin-bottom: 0;
     margin-top: 0;
 }
 .banner p{
-    font-size: 22px;
+    font-size: 1.25rem;
     margin-bottom: 0;
 }
 .banner-left{
     width: 570px;
+    order: 1;
+    
+}
+.banner-right{
+    order: 2;
 }
 .flower{
     margin-top: 0;
@@ -78,4 +90,335 @@ ul .home,.cart{
 .banner-container{
     display: flex;
     align-items: center;
+}
+
+.Our-plants{
+    text-align: center;
+}
+.Our-plants h1{
+    display: inline-block;
+    font-size: 3.1rem ;
+}
+.Our-plants p{
+    font-size: 1.25rem;
+    width: 888px;
+    margin: 0 auto;
+}
+
+.flower-info{
+    text-align: center;
+}
+.inter-font.name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.inter-font.price{
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.flowers-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.flower-plant-lover{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.flower-plant-lover li{
+    list-style: disc;
+}
+.lover-info{
+    height: 520px;
+    width: 540px;
+
+}
+.lover-info h1{
+font-size: 3.2rem;
+}
+.lover-info ol{
+    padding-left: 20px;
+    font-size: 1.25rem;
+
+}
+.lover-info li{
+    margin-bottom: 10px;
+}
+
+.join{
+    background-image: url(./assets/news-letter-bg.png);
+    background-size: 100%;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;         
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;   
+    margin-right: -50vw;
+    background-repeat: no-repeat;
+    
+    
+}
+.join h1{
+    font-size: 50px;
+    color: #FFFFFF;
+
+}
+.search-box{
+    width: 644px;
+    height: 50px;
+    display:block;
+}
+.input-button{
+    display: flex;
+    width: 830px;
+    margin: 0 auto;
+    text-align:center;
+}
+.subscribe{
+    width: 186px;
+    height: 55px;
+    background-color: #E95A08;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* footer start */
+
+.footer {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 240px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  color: #555;
+  max-width: 280px;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+  flex: 2;
+  justify-content: space-evenly;
+  min-width: 200px;
+}
+
+.footer-links p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer-links p:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.footer-icons a {
+  font-size: 18px;
+  color: white;
+  background-color: #0077b5; /* default LinkedIn */
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.footer-icons a:nth-child(2) {
+  background-color: black;
+}
+
+.footer-icons a:nth-child(3) {
+  background-color: #1877f2;
+}
+
+.footer-icons a:nth-child(4) {
+  background-color: red;
+}
+
+
+/* footer end */
+/* responsiveness */
+
+
+/* @media screen and (max-width:576px) {
+    
+    .banner-container{
+        flex-direction: column;
+    }
+    .nav-item{
+        display: none;
+    }
+    .nav-item.cart{
+        display: block;
+    }
+    .banner-left{
+        order: 2;
+        
+    }
+    .banner-right{
+        order: 1;
+    }
+} */
+
+
+
+@media screen and (max-width: 576px) {
+  /* Footer container becomes vertical */
+  
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-left,
+  .footer-links,
+  .footer-icons {
+    width: 100%;
+  }
+
+  .footer-left p {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Make join section responsive */
+  .join {
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 50px 20px;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .join h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .input-button {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .search-box,
+  .subscribe {
+    width: 100%;
+  }
+
+  /* Flower & Plant Lover section */
+  .flower-plant-lover {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .lover-info {
+    width: 100%;
+    height: auto;
+  }
+
+  .lover-info h1 {
+    font-size: 2rem;
+  }
+
+  .lover-info ol {
+    font-size: 1rem;
+    padding-left: 15px;
+    text-align: left;
+  }
+
+  /* Flowers container grid becomes 1 column */
+  .flowers-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /* Banner responsiveness */
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-left {
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .Our-plants p {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 1rem;
+  }
 }
