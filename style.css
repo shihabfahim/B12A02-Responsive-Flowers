@@ -193,51 +193,66 @@ font-size: 3.2rem;
     border: none;
 }
 
-.grid-container {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 10px;
-            max-width: 1200px;
-            margin: 20px auto;
-        }
-        .card {
-            border: 2px solid #00f;
-            border-radius: 10px;
-            padding: 10px;
-            text-align: center;
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            text-shadow: 1px 1px 2px #000;
-        }
-        .card.small {
-            height: 200px;
-        }
-        .card.large {
-            height: 410px;
-        }
-        .card:nth-child(1) {
-            background-image: url('./assets/deal-bloom.png');
-        }
-        .card:nth-child(2) {
-            background-image: url('./assets/deal-zabo.png');
-        }
-        .card:nth-child(3) {
-            background-image: url('./assets/deal-ana.png');
-        }
-        .offer {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .shop-now {
-            display: inline-block;
-            padding: 5px 10px;
-            /* background-color: #fff; */
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
 
+.deals-image{
+    display: flex;
+    gap: 30px ;
+    
+}
+.deals-image h1{
+    margin-top: 0;
+}
+.deals-image-left{
+    width: 30%;
+}
+.deals-image-right{
+    width: 70%;
+}
+.bloom,.ana{
+    height: 200px;
+}
+
+.bloom{
+    background-image: url(./assets/deal-bloom.png);
+}
+.ana{
+    background-image: url(./assets/deal-ana.png);
+}
+
+.zabo{
+    background-image: url(./assets/deal-zabo.png);
+    background-repeat: no-repeat;
+}
+.bloom,.ana,.zabo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.deals-image-left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.deals-image-left h1{
+    font-size: 1.2rem;
+    color: #f7f7f7;
+}
+.deals-image-left a{
+    color: #FFFFFF;
+}
+
+.zabo h1{
+    font-size: 2.5rem;
+    color: #FFFFFF;
+
+}
+.zabo a{
+    color: #FFFFFF ;
+    font-size: 1.6rem;
+}
 
 /* footer start */
 
