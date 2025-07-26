@@ -128,12 +128,27 @@ ul .home,.cart{
 
 .flower-plant-lover{
     display: flex;
-    align-items: center;
-    gap: 50px;
+    flex-direction: column;
+    position: relative;
+   
+}
+.others{
+     display: flex;
+     align-items: center;
+     gap: 50px;
 }
 .flower-plant-lover li{
     list-style: disc;
 }
+
+.badge{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    bottom: 450px;
+    left: 360px;
+}
+
 .lover-info{
     height: 520px;
     width: 540px;
@@ -337,7 +352,13 @@ font-size: 3.2rem;
 .footer-icons a:nth-child(4) {
   background-color: red;
 }
+.banner-left{
+    order: 1;
+}
 
+.banner-right{
+    order: 2;
+}
 
 /* footer end */
 /* responsiveness */
@@ -367,7 +388,20 @@ font-size: 3.2rem;
 
 @media screen and (max-width: 576px) {
   /* Footer container becomes vertical */
-  
+
+  .home,.shop,.About-us{
+    display: none;
+  }
+
+  .banner-left{
+    order: 2;
+}
+
+.banner-right{
+    order: 1;
+}
+
+     
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -403,6 +437,51 @@ font-size: 3.2rem;
     margin-top: 20px;
   }
 
+ 
+  .deals-image {
+    flex-direction: column;
+  }
+
+  .deals-image-left,
+  .deals-image-right {
+    width: 100%;
+  }
+
+  .bloom,
+  .ana,
+  .zabo {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .zabo h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .zabo a {
+    font-size: 1.2rem;
+  }
+
+  .deals-image-left h1,
+  .deals-image-left a {
+    text-align: center;
+  }
+
+  .deals-image-left h1 {
+    font-size: 1rem;
+  }
+
+  .deals-image-left a {
+    font-size: 0.9rem;
+  }
+
+.badge{
+     display: none;
+}
+
+
   /* Make join section responsive */
   .join {
     background-size: cover;
@@ -421,10 +500,14 @@ font-size: 3.2rem;
     text-align: center;
   }
 
-  .input-button {
+  .input-button,.others {
     flex-direction: column;
     width: 100%;
     gap: 10px;
+  }
+  .badge{
+     bottom: 850px;
+      left: 250px;
   }
 
   .search-box,
